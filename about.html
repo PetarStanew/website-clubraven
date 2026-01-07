@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About Us | CLUB RAVEN</title>
+    <meta
+      name="description"
+      content="Learn about CLUB RAVEN, established in 1946, and get in touch for reservations or private events."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="relative overflow-hidden">
+      <div class="pointer-events-none absolute inset-0">
+        <div
+          class="absolute -top-32 -right-20 h-96 w-96 rounded-full bg-[radial-gradient(circle,_rgba(255,95,162,0.18)_0,_transparent_70%)]"
+        ></div>
+        <div
+          class="absolute top-20 left-10 h-72 w-72 rounded-full bg-[radial-gradient(circle,_rgba(243,196,104,0.2)_0,_transparent_70%)]"
+        ></div>
+      </div>
+
+      <header class="sticky top-0 z-50 border-b border-slate-200/80 bg-white/80 backdrop-blur-xl dark:border-white/10 dark:bg-black/70">
+        <div class="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-4">
+          <a class="flex items-center gap-4" href="index.html">
+            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-black shadow-soft">
+              <svg viewBox="0 0 120 120" role="img" aria-label="Club Raven logo" class="h-10 w-10">
+                <rect width="120" height="120" rx="24" fill="#0a0a0a" />
+                <text
+                  x="50%"
+                  y="54%"
+                  text-anchor="middle"
+                  fill="#ff5fa2"
+                  font-size="44"
+                  font-family="Playfair Display, serif"
+                  font-weight="700"
+                  letter-spacing="2"
+                >
+                  CR
+                </text>
+              </svg>
+            </div>
+            <div>
+              <p class="font-display text-lg uppercase tracking-[0.4em] text-slate-900 dark:text-white">CLUB RAVEN</p>
+              <p class="text-xs uppercase tracking-[0.3em] text-slate-500 dark:text-smoke">Cocktail Bar</p>
+            </div>
+          </a>
+          <nav class="hidden items-center gap-8 text-xs uppercase tracking-[0.35em] text-slate-500 md:flex dark:text-smoke">
+            <a class="transition hover:text-ember" href="index.html">Home</a>
+            <a class="transition hover:text-ember" href="index.html#menu">Menu</a>
+            <a class="transition hover:text-ember" href="index.html#atmosphere">Atmosphere</a>
+            <a class="transition hover:text-ember" href="about.html#contact">Contact</a>
+          </nav>
+          <button
+            id="theme-toggle"
+            class="inline-flex rounded-full border border-slate-200 px-4 py-2 text-[11px] uppercase tracking-[0.3em] text-slate-600 transition hover:border-ember hover:text-ember dark:border-white/20 dark:text-smoke"
+            type="button"
+          >
+            Dark Mode
+          </button>
+        </div>
+      </header>
+
+      <main class="relative z-10">
+        <section class="mx-auto grid w-full max-w-6xl gap-12 px-6 pb-16 pt-20 lg:grid-cols-[1.05fr_0.95fr]">
+          <div class="space-y-8" data-reveal>
+            <p class="text-xs uppercase tracking-[0.35em] text-ember">About Club Raven</p>
+            <h1 class="font-display text-5xl uppercase tracking-[0.25em] text-slate-900 dark:text-white">Our Legacy</h1>
+            <p class="text-lg leading-relaxed text-slate-600 dark:text-smoke">
+              CLUB RAVEN opened in 1946 as a sanctuary for neighbors returning home. Today, our bar
+              remains a place to slow down, share stories, and celebrate the night with craftsmanship
+              and care.
+            </p>
+            <div class="grid gap-4 sm:grid-cols-2">
+              <div class="rounded-2xl border border-slate-200 bg-white p-4 shadow-soft dark:border-white/10 dark:bg-night/70">
+                <p class="text-xs uppercase tracking-[0.3em] text-ember">Founded</p>
+                <p class="mt-2 text-sm text-slate-600 dark:text-smoke">1946 · Sacramento, CA</p>
+              </div>
+              <div class="rounded-2xl border border-slate-200 bg-white p-4 shadow-soft dark:border-white/10 dark:bg-night/70">
+                <p class="text-xs uppercase tracking-[0.3em] text-ember">Today</p>
+                <p class="mt-2 text-sm text-slate-600 dark:text-smoke">Craft cocktails · Live jazz</p>
+              </div>
+            </div>
+          </div>
+          <div class="space-y-6" data-reveal>
+            <div class="overflow-hidden rounded-[28px] border border-slate-200 dark:border-white/10">
+              <img
+                src="assets/club-raven-AF1QipNtfaf7jjuC5Thg14C1jFIVVHyDzX29tiWm8Uxr.jpg"
+                alt="Club Raven signature ambiance"
+                class="h-72 w-full object-cover"
+              />
+            </div>
+            <div class="rounded-[28px] border border-slate-200 bg-white p-6 shadow-soft dark:border-white/10 dark:bg-black/70">
+              <p class="text-xs uppercase tracking-[0.3em] text-ember">Our Promise</p>
+              <p class="mt-3 text-sm text-slate-600 dark:text-smoke">
+                We honor the past with every pour, every record spun, and every welcome at the door.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" class="mx-auto w-full max-w-6xl px-6 pb-20">
+          <div class="grid gap-12 lg:grid-cols-[1fr_1fr]">
+            <div class="space-y-6" data-reveal>
+              <p class="text-xs uppercase tracking-[0.35em] text-ember">Contact Us</p>
+              <h2 class="font-display text-4xl uppercase tracking-[0.2em] text-slate-900 dark:text-white">Plan Your Night</h2>
+              <p class="text-lg leading-relaxed text-slate-600 dark:text-smoke">
+                Reach out for reservations, private events, or general inquiries. We reply within one
+                business day.
+              </p>
+              <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-soft dark:border-white/10 dark:bg-night/70">
+                <p class="text-xs uppercase tracking-[0.3em] text-ember">Location</p>
+                <p class="mt-2 text-sm text-slate-600 dark:text-smoke">3246 J St, Sacramento, CA 95816</p>
+                <p class="mt-4 text-xs uppercase tracking-[0.3em] text-ember">Phone</p>
+                <p class="mt-2 text-sm text-slate-600 dark:text-smoke">(916) 555-1946</p>
+              </div>
+            </div>
+            <form class="rounded-[32px] border border-slate-200 bg-white p-8 shadow-soft dark:border-white/10 dark:bg-night/80" data-reveal>
+              <div class="grid gap-6">
+                <div>
+                  <label class="text-xs uppercase tracking-[0.3em] text-ember" for="name">Full Name</label>
+                  <input
+                    class="mt-2 w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700 focus:border-ember focus:outline-none dark:border-white/10 dark:bg-black/70 dark:text-white"
+                    id="name"
+                    name="name"
+                    placeholder="Your name"
+                    type="text"
+                    required
+                  />
+                </div>
+                <div>
+                  <label class="text-xs uppercase tracking-[0.3em] text-ember" for="email">Email Address</label>
+                  <input
+                    class="mt-2 w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700 focus:border-ember focus:outline-none dark:border-white/10 dark:bg-black/70 dark:text-white"
+                    id="email"
+                    name="email"
+                    placeholder="you@email.com"
+                    type="email"
+                    required
+                  />
+                </div>
+                <div>
+                  <label class="text-xs uppercase tracking-[0.3em] text-ember" for="message">Message</label>
+                  <textarea
+                    class="mt-2 h-32 w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700 focus:border-ember focus:outline-none dark:border-white/10 dark:bg-black/70 dark:text-white"
+                    id="message"
+                    name="message"
+                    placeholder="Tell us about your request"
+                    required
+                  ></textarea>
+                </div>
+                <button
+                  class="w-full rounded-full bg-ember px-6 py-3 text-xs uppercase tracking-[0.35em] text-black"
+                  type="submit"
+                >
+                  Send Inquiry
+                </button>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <footer class="border-t border-slate-200 py-10 text-center text-xs uppercase tracking-[0.35em] text-slate-500 dark:border-white/10 dark:text-smoke">
+        <p>CLUB RAVEN · 3246 J St, Sacramento, CA 95816</p>
+        <p class="mt-2">Crafted cocktails. Velvet nights. Black wings.</p>
+        <div class="mt-4 flex justify-center gap-6">
+          <a class="hover:text-ember" href="https://www.facebook.com/groups/133136520426/" target="_blank" rel="noreferrer">Facebook</a>
+          <a class="hover:text-ember" href="https://www.instagram.com/club_raven/" target="_blank" rel="noreferrer">Instagram</a>
+          <a class="hover:text-ember" href="terms.html">Terms</a>
+          <a class="hover:text-ember" href="privacy.html">Privacy</a>
+        </div>
+      </footer>
+    </div>
+
+    <div
+      id="cookie-banner"
+      class="fixed bottom-6 left-1/2 z-50 hidden w-[min(92vw,720px)] -translate-x-1/2 rounded-3xl border border-slate-200 bg-white p-6 shadow-soft dark:border-white/10 dark:bg-night/90"
+    >
+      <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+        <div>
+          <p class="text-xs uppercase tracking-[0.3em] text-ember">Cookie Notice</p>
+          <p class="mt-2 text-sm text-slate-600 dark:text-smoke">
+            We use cookies to improve your experience. Read our
+            <a class="underline hover:text-ember" href="privacy.html">privacy policy</a>.
+          </p>
+        </div>
+        <button
+          id="cookie-accept"
+          class="rounded-full bg-ember px-5 py-2 text-xs uppercase tracking-[0.35em] text-black"
+          type="button"
+        >
+          Accept
+        </button>
+      </div>
+    </div>
+
+    <script>
+      const revealTargets = document.querySelectorAll("[data-reveal]");
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("opacity-100", "translate-y-0");
+            }
+          });
+        },
+        { threshold: 0.2 }
+      );
+
+      revealTargets.forEach((target) => {
+        target.classList.add("opacity-0", "translate-y-6", "transition", "duration-700");
+        observer.observe(target);
+      });
+
+      const body = document.body;
+      const toggleButton = document.getElementById("theme-toggle");
+      const storedTheme = localStorage.getItem("clubraven-theme");
+
+      if (storedTheme === "dark") {
+        body.classList.add("dark");
+        if (toggleButton) toggleButton.textContent = "Light Mode";
+      }
+
+      if (toggleButton) {
+        toggleButton.addEventListener("click", () => {
+          body.classList.toggle("dark");
+          const isDark = body.classList.contains("dark");
+          toggleButton.textContent = isDark ? "Light Mode" : "Dark Mode";
+          localStorage.setItem("clubraven-theme", isDark ? "dark" : "light");
+        });
+      }
+
+      const cookieBanner = document.getElementById("cookie-banner");
+      const cookieAccept = document.getElementById("cookie-accept");
+
+      if (cookieBanner && !localStorage.getItem("clubraven-cookie")) {
+        cookieBanner.classList.remove("hidden");
+      }
+
+      if (cookieAccept) {
+        cookieAccept.addEventListener("click", () => {
+          localStorage.setItem("clubraven-cookie", "accepted");
+          cookieBanner.classList.add("hidden");
+        });
+      }
+    </script>
+  </body>
+</html>

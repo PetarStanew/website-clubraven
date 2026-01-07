@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy Policy | CLUB RAVEN</title>
+    <meta name="description" content="Privacy policy for CLUB RAVEN." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="relative overflow-hidden">
+      <header class="sticky top-0 z-50 border-b border-slate-200/80 bg-white/80 backdrop-blur-xl dark:border-white/10 dark:bg-black/70">
+        <div class="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-4">
+          <a class="flex items-center gap-4" href="index.html">
+            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-black shadow-soft">
+              <svg viewBox="0 0 120 120" role="img" aria-label="Club Raven logo" class="h-10 w-10">
+                <rect width="120" height="120" rx="24" fill="#0a0a0a" />
+                <text
+                  x="50%"
+                  y="54%"
+                  text-anchor="middle"
+                  fill="#ff5fa2"
+                  font-size="44"
+                  font-family="Playfair Display, serif"
+                  font-weight="700"
+                  letter-spacing="2"
+                >
+                  CR
+                </text>
+              </svg>
+            </div>
+            <div>
+              <p class="font-display text-lg uppercase tracking-[0.4em] text-slate-900 dark:text-white">CLUB RAVEN</p>
+              <p class="text-xs uppercase tracking-[0.3em] text-slate-500 dark:text-smoke">Cocktail Bar</p>
+            </div>
+          </a>
+          <nav class="hidden items-center gap-8 text-xs uppercase tracking-[0.35em] text-slate-500 md:flex dark:text-smoke">
+            <a class="transition hover:text-ember" href="index.html">Home</a>
+            <a class="transition hover:text-ember" href="about.html">About</a>
+            <a class="transition hover:text-ember" href="terms.html">Terms</a>
+          </nav>
+          <button
+            id="theme-toggle"
+            class="inline-flex rounded-full border border-slate-200 px-4 py-2 text-[11px] uppercase tracking-[0.3em] text-slate-600 transition hover:border-ember hover:text-ember dark:border-white/20 dark:text-smoke"
+            type="button"
+          >
+            Dark Mode
+          </button>
+        </div>
+      </header>
+
+      <main class="relative z-10">
+        <section class="mx-auto w-full max-w-4xl px-6 pb-20 pt-20" data-reveal>
+          <p class="text-xs uppercase tracking-[0.35em] text-ember">Privacy Policy</p>
+          <h1 class="mt-4 font-display text-4xl uppercase tracking-[0.2em] text-slate-900 dark:text-white">Your Privacy</h1>
+          <div class="mt-8 space-y-6 text-sm text-slate-600 dark:text-smoke">
+            <p>
+              CLUB RAVEN respects your privacy. This policy explains what information we collect and
+              how we use it.
+            </p>
+            <p>
+              We only collect information you provide through contact forms or reservation requests.
+              This may include your name, email, and message details.
+            </p>
+            <p>
+              We use cookies to remember your preferences and improve website performance. You can
+              manage cookies through your browser settings.
+            </p>
+            <p>
+              We do not sell or share your personal information with third parties except as required
+              by law.
+            </p>
+            <p>
+              If you have questions about your data, please contact us at (916) 555-1946.
+            </p>
+          </div>
+        </section>
+      </main>
+
+      <footer class="border-t border-slate-200 py-10 text-center text-xs uppercase tracking-[0.35em] text-slate-500 dark:border-white/10 dark:text-smoke">
+        <p>CLUB RAVEN · 3246 J St, Sacramento, CA 95816</p>
+        <p class="mt-2">Crafted cocktails. Velvet nights. Black wings.</p>
+        <div class="mt-4 flex justify-center gap-6">
+          <a class="hover:text-ember" href="https://www.facebook.com/groups/133136520426/" target="_blank" rel="noreferrer">Facebook</a>
+          <a class="hover:text-ember" href="https://www.instagram.com/club_raven/" target="_blank" rel="noreferrer">Instagram</a>
+          <a class="hover:text-ember" href="terms.html">Terms</a>
+        </div>
+      </footer>
+    </div>
+
+    <div
+      id="cookie-banner"
+      class="fixed bottom-6 left-1/2 z-50 hidden w-[min(92vw,720px)] -translate-x-1/2 rounded-3xl border border-slate-200 bg-white p-6 shadow-soft dark:border-white/10 dark:bg-night/90"
+    >
+      <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+        <div>
+          <p class="text-xs uppercase tracking-[0.3em] text-ember">Cookie Notice</p>
+          <p class="mt-2 text-sm text-slate-600 dark:text-smoke">
+            We use cookies to improve your experience. Read our
+            <a class="underline hover:text-ember" href="privacy.html">privacy policy</a>.
+          </p>
+        </div>
+        <button
+          id="cookie-accept"
+          class="rounded-full bg-ember px-5 py-2 text-xs uppercase tracking-[0.35em] text-black"
+          type="button"
+        >
+          Accept
+        </button>
+      </div>
+    </div>
+
+    <script>
+      const revealTargets = document.querySelectorAll("[data-reveal]");
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("opacity-100", "translate-y-0");
+            }
+          });
+        },
+        { threshold: 0.2 }
+      );
+
+      revealTargets.forEach((target) => {
+        target.classList.add("opacity-0", "translate-y-6", "transition", "duration-700");
+        observer.observe(target);
+      });
+
+      const body = document.body;
+      const toggleButton = document.getElementById("theme-toggle");
+      const storedTheme = localStorage.getItem("clubraven-theme");
+
+      if (storedTheme === "dark") {
+        body.classList.add("dark");
+        if (toggleButton) toggleButton.textContent = "Light Mode";
+      }
+
+      if (toggleButton) {
+        toggleButton.addEventListener("click", () => {
+          body.classList.toggle("dark");
+          const isDark = body.classList.contains("dark");
+          toggleButton.textContent = isDark ? "Light Mode" : "Dark Mode";
+          localStorage.setItem("clubraven-theme", isDark ? "dark" : "light");
+        });
+      }
+
+      const cookieBanner = document.getElementById("cookie-banner");
+      const cookieAccept = document.getElementById("cookie-accept");
+
+      if (cookieBanner && !localStorage.getItem("clubraven-cookie")) {
+        cookieBanner.classList.remove("hidden");
+      }
+
+      if (cookieAccept) {
+        cookieAccept.addEventListener("click", () => {
+          localStorage.setItem("clubraven-cookie", "accepted");
+          cookieBanner.classList.add("hidden");
+        });
+      }
+    </script>
+  </body>
+</html>

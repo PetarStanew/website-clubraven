@@ -8,6 +8,10 @@
   }
 
   body {
-    @apply bg-noir text-white font-body;
+    @apply bg-white text-slate-900 font-body;
+  }
+
+  body.dark {
+    @apply bg-noir text-white;
   }
 }

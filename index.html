@@ -20,17 +20,17 @@
     <div class="relative overflow-hidden">
       <div class="pointer-events-none absolute inset-0">
         <div
-          class="absolute -top-32 -right-20 h-96 w-96 rounded-full bg-[radial-gradient(circle,_rgba(255,95,162,0.2)_0,_transparent_70%)]"
+          class="absolute -top-32 -right-20 h-96 w-96 rounded-full bg-[radial-gradient(circle,_rgba(255,95,162,0.18)_0,_transparent_70%)]"
         ></div>
         <div
-          class="absolute top-20 left-10 h-72 w-72 rounded-full bg-[radial-gradient(circle,_rgba(243,196,104,0.16)_0,_transparent_70%)]"
+          class="absolute top-20 left-10 h-72 w-72 rounded-full bg-[radial-gradient(circle,_rgba(243,196,104,0.2)_0,_transparent_70%)]"
         ></div>
         <div
-          class="absolute bottom-0 left-1/2 h-64 w-64 -translate-x-1/2 rounded-full bg-[radial-gradient(circle,_rgba(255,255,255,0.08)_0,_transparent_70%)]"
+          class="absolute bottom-0 left-1/2 h-64 w-64 -translate-x-1/2 rounded-full bg-[radial-gradient(circle,_rgba(15,15,15,0.12)_0,_transparent_70%)] dark:bg-[radial-gradient(circle,_rgba(255,255,255,0.08)_0,_transparent_70%)]"
         ></div>
       </div>
 
-      <header class="sticky top-0 z-50 border-b border-white/10 bg-black/80 backdrop-blur-xl">
+      <header class="sticky top-0 z-50 border-b border-slate-200/80 bg-white/80 backdrop-blur-xl dark:border-white/10 dark:bg-black/70">
         <div class="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-4">
           <div class="flex items-center gap-4">
             <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-black shadow-soft">
@@ -51,22 +51,32 @@
               </svg>
             </div>
             <div>
-              <p class="font-display text-lg uppercase tracking-[0.4em]">CLUB RAVEN</p>
-              <p class="text-xs uppercase tracking-[0.3em] text-smoke">Cocktail Bar</p>
+              <p class="font-display text-lg uppercase tracking-[0.4em] text-slate-900 dark:text-white">CLUB RAVEN</p>
+              <p class="text-xs uppercase tracking-[0.3em] text-slate-500 dark:text-smoke">Cocktail Bar</p>
             </div>
           </div>
-          <nav class="hidden items-center gap-8 text-xs uppercase tracking-[0.35em] text-smoke md:flex">
+          <nav class="hidden items-center gap-8 text-xs uppercase tracking-[0.35em] text-slate-500 md:flex dark:text-smoke">
             <a class="transition hover:text-ember" href="#story">Story</a>
             <a class="transition hover:text-ember" href="#menu">Menu</a>
             <a class="transition hover:text-ember" href="#atmosphere">Atmosphere</a>
-            <a class="transition hover:text-ember" href="#location">Location</a>
+            <a class="transition hover:text-ember" href="about.html">About</a>
+            <a class="transition hover:text-ember" href="about.html#contact">Contact</a>
           </nav>
-          <a
-            class="hidden rounded-full border border-ember/40 px-5 py-2 text-xs uppercase tracking-[0.3em] text-ember transition hover:border-ember hover:text-white md:inline-flex"
-            href="#reservation"
-          >
-            Reserve
-          </a>
+          <div class="hidden items-center gap-3 md:flex">
+            <button
+              id="theme-toggle"
+              class="inline-flex rounded-full border border-slate-200 px-4 py-2 text-[11px] uppercase tracking-[0.3em] text-slate-600 transition hover:border-ember hover:text-ember dark:border-white/20 dark:text-smoke"
+              type="button"
+            >
+              Dark Mode
+            </button>
+            <a
+              class="rounded-full border border-ember/40 px-5 py-2 text-xs uppercase tracking-[0.3em] text-ember transition hover:border-ember hover:text-slate-900 dark:hover:text-white"
+              href="#reservation"
+            >
+              Reserve
+            </a>
+          </div>
         </div>
       </header>
 
@@ -77,10 +87,10 @@
               Sacramento, California
             </div>
             <div class="space-y-6">
-              <h1 class="font-display text-5xl uppercase tracking-[0.25em] text-white sm:text-6xl">
+              <h1 class="font-display text-5xl uppercase tracking-[0.25em] text-slate-900 dark:text-white sm:text-6xl">
                 CLUB RAVEN
               </h1>
-              <p class="text-lg leading-relaxed text-smoke">
+              <p class="text-lg leading-relaxed text-slate-600 dark:text-smoke">
                 Since 1946, CLUB RAVEN has carried the city through wartime farewells, jazz-fueled reunions,
                 and modern nights that feel timeless. Our bar is a tribute to craft, patience, and the
                 stories shared across the counter.
@@ -94,7 +104,7 @@
                 View Cocktail Menu
               </a>
               <a
-                class="rounded-full border border-white/20 px-6 py-3 text-xs uppercase tracking-[0.35em] text-white transition hover:border-ember"
+                class="rounded-full border border-slate-200 px-6 py-3 text-xs uppercase tracking-[0.35em] text-slate-800 transition hover:border-ember dark:border-white/20 dark:text-white"
                 href="https://maps.app.goo.gl/3v4CiteNxL1KLKJs5"
                 target="_blank"
                 rel="noreferrer"
@@ -102,7 +112,7 @@
                 Get Directions
               </a>
             </div>
-            <div class="grid gap-6 border-t border-white/10 pt-6 text-sm text-smoke sm:grid-cols-2">
+            <div class="grid gap-6 border-t border-slate-200/80 pt-6 text-sm text-slate-600 sm:grid-cols-2 dark:border-white/10 dark:text-smoke">
               <div>
                 <p class="text-xs uppercase tracking-[0.35em] text-ember">Address</p>
                 <p>3246 J St, Sacramento, CA 95816</p>
@@ -116,17 +126,17 @@
 
           <div class="relative" data-reveal>
             <div class="absolute -top-6 left-6 h-32 w-32 rounded-full border border-ember/30"></div>
-            <div class="absolute right-0 top-10 h-24 w-24 rounded-full border border-white/20"></div>
-            <div class="overflow-hidden rounded-[32px] border border-white/10 bg-night/80 shadow-soft">
+            <div class="absolute right-0 top-10 h-24 w-24 rounded-full border border-slate-200 dark:border-white/20"></div>
+            <div class="overflow-hidden rounded-[32px] border border-slate-200 bg-white shadow-soft dark:border-white/10 dark:bg-night/80">
               <img
-                src="assets/hero.jpg"
-                alt="Elegant cocktail bar interior with warm lighting"
+                src="assets/club-raven-AF1QipPT3RaShc-k9JH1S2z51Ie1iCXcElHkkyVHkeqR.jpg"
+                alt="Club Raven interior with warm lighting"
                 class="h-full w-full object-cover"
               />
             </div>
             <div class="mt-6 flex items-center gap-4">
               <div class="h-1 w-16 rounded-full bg-ember"></div>
-              <p class="text-xs uppercase tracking-[0.4em] text-smoke">Heritage in Every Glass</p>
+              <p class="text-xs uppercase tracking-[0.4em] text-slate-500 dark:text-smoke">Heritage in Every Glass</p>
             </div>
           </div>
         </section>
@@ -135,24 +145,24 @@
           <div class="grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
             <div data-reveal>
               <p class="text-xs uppercase tracking-[0.35em] text-ember">Our Story</p>
-              <h2 class="font-display text-4xl uppercase tracking-[0.2em]">Since 1946</h2>
-              <p class="mt-6 text-lg leading-relaxed text-smoke">
+              <h2 class="font-display text-4xl uppercase tracking-[0.2em] text-slate-900 dark:text-white">Since 1946</h2>
+              <p class="mt-6 text-lg leading-relaxed text-slate-600 dark:text-smoke">
                 Enduring since 1946, CLUB RAVEN has outlasted trends because it was built on people:
                 neighborhood regulars, first dates, and celebrations that became tradition.
               </p>
             </div>
             <div class="space-y-6" data-reveal>
-              <div class="rounded-[28px] border border-white/10 bg-night/70 p-6">
-                <p class="text-lg leading-relaxed text-smoke">
+              <div class="rounded-[28px] border border-slate-200 bg-white p-6 shadow-soft dark:border-white/10 dark:bg-night/70">
+                <p class="text-lg leading-relaxed text-slate-600 dark:text-smoke">
                   The club opened its doors in 1946 as a quiet refuge for returning neighbors. Over decades,
                   we have welcomed musicians, artists, and the city itself. Every seat is a front-row view
                   to Sacramento's midnight heartbeat.
                 </p>
               </div>
-              <div class="overflow-hidden rounded-[28px] border border-white/10">
+              <div class="overflow-hidden rounded-[28px] border border-slate-200 dark:border-white/10">
                 <img
-                  src="assets/lounge.jpg"
-                  alt="Guests enjoying a refined lounge with ambient lighting"
+                  src="assets/club-raven-AF1QipPksGb7aYPY9HtuyxfU-bB1k1eMx3iljBcTDj4s.jpg"
+                  alt="Intimate lounge seating inside Club Raven"
                   class="h-64 w-full object-cover"
                 />
               </div>
@@ -164,55 +174,55 @@
           <div class="flex flex-wrap items-end justify-between gap-6" data-reveal>
             <div>
               <p class="text-xs uppercase tracking-[0.35em] text-ember">Signature Cocktails</p>
-              <h2 class="font-display text-4xl uppercase tracking-[0.2em]">Menu</h2>
+              <h2 class="font-display text-4xl uppercase tracking-[0.2em] text-slate-900 dark:text-white">Menu</h2>
             </div>
-            <p class="max-w-xl text-sm leading-relaxed text-smoke">
+            <p class="max-w-xl text-sm leading-relaxed text-slate-600 dark:text-smoke">
               Dark spirits, bright citrus, and a hint of smoke. Each drink is balanced for slow nights
               and long conversations.
             </p>
           </div>
           <div class="mt-10 grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
             <div class="grid gap-6 md:grid-cols-2" data-reveal>
-              <div class="rounded-3xl border border-white/10 bg-night/70 p-6 shadow-soft">
+              <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-soft dark:border-white/10 dark:bg-night/70">
                 <div class="flex items-center justify-between">
-                  <h3 class="font-display text-2xl">Midnight Negroni</h3>
+                  <h3 class="font-display text-2xl text-slate-900 dark:text-white">Midnight Negroni</h3>
                   <span class="text-ember">$14</span>
                 </div>
-                <p class="mt-3 text-sm text-smoke">Black gin, bitter aperitif, cacao vermouth, orange peel.</p>
+                <p class="mt-3 text-sm text-slate-600 dark:text-smoke">Black gin, bitter aperitif, cacao vermouth, orange peel.</p>
               </div>
-              <div class="rounded-3xl border border-white/10 bg-night/70 p-6 shadow-soft">
+              <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-soft dark:border-white/10 dark:bg-night/70">
                 <div class="flex items-center justify-between">
-                  <h3 class="font-display text-2xl">Velvet Raven</h3>
+                  <h3 class="font-display text-2xl text-slate-900 dark:text-white">Velvet Raven</h3>
                   <span class="text-ember">$15</span>
                 </div>
-                <p class="mt-3 text-sm text-smoke">Blackberry rye, amaro, lemon, sage mist.</p>
+                <p class="mt-3 text-sm text-slate-600 dark:text-smoke">Blackberry rye, amaro, lemon, sage mist.</p>
               </div>
-              <div class="rounded-3xl border border-white/10 bg-night/70 p-6 shadow-soft">
+              <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-soft dark:border-white/10 dark:bg-night/70">
                 <div class="flex items-center justify-between">
-                  <h3 class="font-display text-2xl">Smoke &amp; Citrus</h3>
+                  <h3 class="font-display text-2xl text-slate-900 dark:text-white">Smoke &amp; Citrus</h3>
                   <span class="text-ember">$15</span>
                 </div>
-                <p class="mt-3 text-sm text-smoke">Mezcal, charred grapefruit, agave, sea salt.</p>
+                <p class="mt-3 text-sm text-slate-600 dark:text-smoke">Mezcal, charred grapefruit, agave, sea salt.</p>
               </div>
-              <div class="rounded-3xl border border-white/10 bg-night/70 p-6 shadow-soft">
+              <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-soft dark:border-white/10 dark:bg-night/70">
                 <div class="flex items-center justify-between">
-                  <h3 class="font-display text-2xl">Espresso Nocturne</h3>
+                  <h3 class="font-display text-2xl text-slate-900 dark:text-white">Espresso Nocturne</h3>
                   <span class="text-ember">$14</span>
                 </div>
-                <p class="mt-3 text-sm text-smoke">Vodka, cold brew, coffee liqueur, cacao.</p>
+                <p class="mt-3 text-sm text-slate-600 dark:text-smoke">Vodka, cold brew, coffee liqueur, cacao.</p>
               </div>
             </div>
             <div class="space-y-6" data-reveal>
-              <div class="overflow-hidden rounded-[28px] border border-white/10">
+              <div class="overflow-hidden rounded-[28px] border border-slate-200 dark:border-white/10">
                 <img
-                  src="assets/cocktail.jpg"
-                  alt="Craft cocktail with citrus garnish"
+                  src="assets/club-raven-AF1QipMd1JFyl1nP1oYpCItEA7D1lu6sasCWp4OUxTgC.jpg"
+                  alt="Signature cocktail presentation at Club Raven"
                   class="h-72 w-full object-cover"
                 />
               </div>
-              <div class="rounded-[28px] border border-white/10 bg-black/70 p-6">
+              <div class="rounded-[28px] border border-slate-200 bg-white p-6 shadow-soft dark:border-white/10 dark:bg-black/70">
                 <p class="text-xs uppercase tracking-[0.3em] text-ember">House Ritual</p>
-                <p class="mt-3 text-sm text-smoke">
+                <p class="mt-3 text-sm text-slate-600 dark:text-smoke">
                   Every drink is stirred slowly and served with a story. Ask the bartender for the
                   1946 legacy pour.
                 </p>
@@ -226,45 +236,77 @@
             <div class="space-y-8" data-reveal>
               <div>
                 <p class="text-xs uppercase tracking-[0.35em] text-ember">The Vibe</p>
-                <h2 class="font-display text-4xl uppercase tracking-[0.2em]">Atmosphere</h2>
+                <h2 class="font-display text-4xl uppercase tracking-[0.2em] text-slate-900 dark:text-white">Atmosphere</h2>
               </div>
-              <p class="text-lg leading-relaxed text-smoke">
+              <p class="text-lg leading-relaxed text-slate-600 dark:text-smoke">
                 Velvet-dark interiors, amber glow, and the soft clink of crystal. CLUB RAVEN is designed
                 for nights that linger long after the last song fades.
               </p>
               <div class="grid gap-4 sm:grid-cols-2">
-                <div class="rounded-2xl border border-white/10 bg-black/60 p-4">
+                <div class="rounded-2xl border border-slate-200 bg-white p-4 shadow-soft dark:border-white/10 dark:bg-black/60">
                   <p class="text-xs uppercase tracking-[0.3em] text-ember">Black Feather Lounge</p>
-                  <p class="mt-2 text-sm text-smoke">Plush seating, whisper-level lighting, slow-burning jazz.</p>
+                  <p class="mt-2 text-sm text-slate-600 dark:text-smoke">Plush seating, whisper-level lighting, slow-burning jazz.</p>
                 </div>
-                <div class="rounded-2xl border border-white/10 bg-black/60 p-4">
+                <div class="rounded-2xl border border-slate-200 bg-white p-4 shadow-soft dark:border-white/10 dark:bg-black/60">
                   <p class="text-xs uppercase tracking-[0.3em] text-ember">Raven Bar</p>
-                  <p class="mt-2 text-sm text-smoke">Hand-cut ice, precise pours, curated back bar.</p>
+                  <p class="mt-2 text-sm text-slate-600 dark:text-smoke">Hand-cut ice, precise pours, curated back bar.</p>
                 </div>
-                <div class="rounded-2xl border border-white/10 bg-black/60 p-4">
+                <div class="rounded-2xl border border-slate-200 bg-white p-4 shadow-soft dark:border-white/10 dark:bg-black/60">
                   <p class="text-xs uppercase tracking-[0.3em] text-ember">Midnight Patio</p>
-                  <p class="mt-2 text-sm text-smoke">Warm air, deep shadows, soft city glow.</p>
+                  <p class="mt-2 text-sm text-slate-600 dark:text-smoke">Warm air, deep shadows, soft city glow.</p>
                 </div>
-                <div class="rounded-2xl border border-white/10 bg-black/60 p-4">
+                <div class="rounded-2xl border border-slate-200 bg-white p-4 shadow-soft dark:border-white/10 dark:bg-black/60">
                   <p class="text-xs uppercase tracking-[0.3em] text-ember">Vinyl Corner</p>
-                  <p class="mt-2 text-sm text-smoke">Analog warmth, curated record lists, intimate seating.</p>
+                  <p class="mt-2 text-sm text-slate-600 dark:text-smoke">Analog warmth, curated record lists, intimate seating.</p>
                 </div>
               </div>
             </div>
             <div class="space-y-6" data-reveal>
-              <div class="overflow-hidden rounded-[28px] border border-white/10">
+              <div class="overflow-hidden rounded-[28px] border border-slate-200 dark:border-white/10">
                 <img
-                  src="assets/lounge.jpg"
-                  alt="Softly lit cocktail lounge with seating"
+                  src="assets/club-raven-AF1QipNuPb7vToKcCV6r9r3FoJKsymvMpGXmeifEaiBq.jpg"
+                  alt="Candlelit lounge atmosphere"
                   class="h-64 w-full object-cover"
                 />
               </div>
-              <div class="rounded-[28px] border border-white/10 bg-black/70 p-6">
+              <div class="rounded-[28px] border border-slate-200 bg-white p-6 shadow-soft dark:border-white/10 dark:bg-black/70">
                 <p class="text-xs uppercase tracking-[0.3em] text-ember">Dress Code</p>
-                <p class="mt-3 text-sm text-smoke">Elegant, effortless, and ready for the night.</p>
+                <p class="mt-3 text-sm text-slate-600 dark:text-smoke">Elegant, effortless, and ready for the night.</p>
                 <p class="mt-6 text-xs uppercase tracking-[0.3em] text-ember">Hours</p>
-                <p class="mt-3 text-sm text-smoke">Tue - Sun · 5 PM - 1 AM</p>
+                <p class="mt-3 text-sm text-slate-600 dark:text-smoke">Tue - Sun · 5 PM - 1 AM</p>
               </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="mx-auto w-full max-w-6xl px-6 py-16" data-reveal>
+          <div class="flex items-end justify-between">
+            <div>
+              <p class="text-xs uppercase tracking-[0.35em] text-ember">Gallery</p>
+              <h2 class="font-display text-4xl uppercase tracking-[0.2em] text-slate-900 dark:text-white">Club Moments</h2>
+            </div>
+          </div>
+          <div class="mt-8 grid gap-6 md:grid-cols-3">
+            <div class="overflow-hidden rounded-3xl border border-slate-200 dark:border-white/10">
+              <img
+                src="assets/club-raven-AF1QipMIETpJKAlLAZErHIkdldbrzXGC_KDlZsaelYJC.jpg"
+                alt="Club Raven bar details"
+                class="h-56 w-full object-cover"
+              />
+            </div>
+            <div class="overflow-hidden rounded-3xl border border-slate-200 dark:border-white/10">
+              <img
+                src="assets/club-raven-AF1QipNDqWoKynDiv-Y6q16UCSr9_1jwCbjtvc34ijWt.jpg"
+                alt="Evening cocktails at the lounge"
+                class="h-56 w-full object-cover"
+              />
+            </div>
+            <div class="overflow-hidden rounded-3xl border border-slate-200 dark:border-white/10">
+              <img
+                src="assets/club-raven-AF1QipP9HjTmNdVjxK8Q85KD665zWUbkPlzLx-dpwZ7L.jpg"
+                alt="Warm ambient lighting inside Club Raven"
+                class="h-56 w-full object-cover"
+              />
             </div>
           </div>
         </section>
@@ -273,63 +315,87 @@
           <div class="grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
             <div class="space-y-6" data-reveal>
               <p class="text-xs uppercase tracking-[0.35em] text-ember">Visit</p>
-              <h2 class="font-display text-4xl uppercase tracking-[0.2em]">Location</h2>
-              <p class="text-lg leading-relaxed text-smoke">
+              <h2 class="font-display text-4xl uppercase tracking-[0.2em] text-slate-900 dark:text-white">Location</h2>
+              <p class="text-lg leading-relaxed text-slate-600 dark:text-smoke">
                 Find CLUB RAVEN in Sacramento, California. Come by for a crafted cocktail and a slow
                 night out.
               </p>
-              <div class="rounded-3xl border border-white/10 bg-night/70 p-6">
-                <p class="font-display text-2xl text-white">CLUB RAVEN</p>
-                <p class="mt-2 text-sm text-smoke">3246 J St, Sacramento, CA 95816, United States</p>
-                <a
-                  class="mt-6 inline-flex rounded-full bg-ember px-6 py-3 text-xs uppercase tracking-[0.35em] text-black"
-                  href="https://maps.app.goo.gl/3v4CiteNxL1KLKJs5"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Open in Maps
-                </a>
+              <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-soft dark:border-white/10 dark:bg-night/70">
+                <p class="font-display text-2xl text-slate-900 dark:text-white">CLUB RAVEN</p>
+                <p class="mt-2 text-sm text-slate-600 dark:text-smoke">3246 J St, Sacramento, CA 95816, United States</p>
+                <div class="mt-6 flex flex-wrap gap-4">
+                  <a
+                    class="inline-flex rounded-full bg-ember px-6 py-3 text-xs uppercase tracking-[0.35em] text-black"
+                    href="https://maps.app.goo.gl/3v4CiteNxL1KLKJs5"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Open in Maps
+                  </a>
+                  <a
+                    class="inline-flex rounded-full border border-slate-200 px-6 py-3 text-xs uppercase tracking-[0.35em] text-slate-700 dark:border-white/20 dark:text-white"
+                    href="about.html#contact"
+                  >
+                    Contact Us
+                  </a>
+                </div>
               </div>
             </div>
-            <div class="rounded-[32px] border border-white/10 bg-[linear-gradient(135deg,_rgba(27,23,21,0.9),_rgba(8,7,7,0.9))] p-8 shadow-soft" data-reveal>
+            <div class="rounded-[32px] border border-slate-200 bg-white p-8 shadow-soft dark:border-white/10 dark:bg-night/80" data-reveal>
               <div class="flex items-center justify-between">
                 <p class="text-xs uppercase tracking-[0.35em] text-ember">Neighborhood</p>
-                <p class="text-xs uppercase tracking-[0.35em] text-smoke">Midtown</p>
+                <p class="text-xs uppercase tracking-[0.35em] text-slate-500 dark:text-smoke">Midtown</p>
               </div>
-              <div class="mt-6 overflow-hidden rounded-3xl border border-white/10">
+              <div class="mt-6 overflow-hidden rounded-3xl border border-slate-200 dark:border-white/10">
                 <img
-                  src="assets/hero.jpg"
-                  alt="Exterior-inspired warm lighting details"
+                  src="assets/club-raven-AF1QipN7w8WRUVbp3G1BBPr6B9x8sgprEQf0398CtHtY.jpg"
+                  alt="Neighborhood nightlife near Club Raven"
                   class="h-56 w-full object-cover"
                 />
               </div>
               <div class="mt-6 grid gap-4 sm:grid-cols-2">
-                <div class="rounded-2xl border border-white/10 bg-black/60 p-4">
+                <div class="rounded-2xl border border-slate-200 bg-white p-4 shadow-soft dark:border-white/10 dark:bg-black/60">
                   <p class="text-xs uppercase tracking-[0.3em] text-ember">Reservations</p>
-                  <p class="mt-2 text-sm text-smoke">Evenings recommended.</p>
+                  <p class="mt-2 text-sm text-slate-600 dark:text-smoke">Evenings recommended.</p>
                 </div>
-                <div class="rounded-2xl border border-white/10 bg-black/60 p-4">
+                <div class="rounded-2xl border border-slate-200 bg-white p-4 shadow-soft dark:border-white/10 dark:bg-black/60">
                   <p class="text-xs uppercase tracking-[0.3em] text-ember">Private Events</p>
-                  <p class="mt-2 text-sm text-smoke">Intimate gatherings available.</p>
+                  <p class="mt-2 text-sm text-slate-600 dark:text-smoke">Intimate gatherings available.</p>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
+        <section class="mx-auto w-full max-w-6xl px-6 pb-16" data-reveal>
+          <div class="overflow-hidden rounded-[32px] border border-slate-200 bg-white shadow-soft dark:border-white/10 dark:bg-night/80">
+            <div class="border-b border-slate-200 px-6 py-5 dark:border-white/10">
+              <p class="text-xs uppercase tracking-[0.35em] text-ember">Find Us</p>
+              <h2 class="font-display text-3xl uppercase tracking-[0.2em] text-slate-900 dark:text-white">Google Map</h2>
+            </div>
+            <iframe
+              title="Club Raven map"
+              src="https://www.google.com/maps?q=3246%20J%20St%2C%20Sacramento%2C%20CA%2095816&output=embed"
+              class="h-80 w-full border-0"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </section>
+
         <section id="reservation" class="mx-auto w-full max-w-6xl px-6 pb-20">
-          <div class="rounded-[32px] border border-white/10 bg-[linear-gradient(120deg,_rgba(12,10,10,0.95),_rgba(24,20,18,0.95))] p-10 text-center" data-reveal>
+          <div class="rounded-[32px] border border-slate-200 bg-white p-10 text-center shadow-soft dark:border-white/10 dark:bg-[linear-gradient(120deg,_rgba(12,10,10,0.95),_rgba(24,20,18,0.95))]" data-reveal>
             <p class="text-xs uppercase tracking-[0.35em] text-ember">A Night to Remember</p>
-            <h2 class="mt-4 font-display text-3xl uppercase tracking-[0.2em]">Reserve Your Table</h2>
-            <p class="mt-4 text-sm text-smoke">
+            <h2 class="mt-4 font-display text-3xl uppercase tracking-[0.2em] text-slate-900 dark:text-white">Reserve Your Table</h2>
+            <p class="mt-4 text-sm text-slate-600 dark:text-smoke">
               Step into a room shaped by 78 years of celebration. Every pour honors the past and
               raises a glass to the nights ahead.
             </p>
             <div class="mt-6 flex flex-wrap justify-center gap-4">
-              <a class="rounded-full bg-ember px-6 py-3 text-xs uppercase tracking-[0.35em] text-black" href="#">
+              <a class="rounded-full bg-ember px-6 py-3 text-xs uppercase tracking-[0.35em] text-black" href="about.html#contact">
                 Request a Reservation
               </a>
-              <a class="rounded-full border border-white/20 px-6 py-3 text-xs uppercase tracking-[0.35em] text-white" href="#menu">
+              <a class="rounded-full border border-slate-200 px-6 py-3 text-xs uppercase tracking-[0.35em] text-slate-700 dark:border-white/20 dark:text-white" href="#menu">
                 Browse Menu
               </a>
             </div>
@@ -337,10 +403,38 @@
         </section>
       </main>
 
-      <footer class="border-t border-white/10 py-10 text-center text-xs uppercase tracking-[0.35em] text-smoke">
+      <footer class="border-t border-slate-200 py-10 text-center text-xs uppercase tracking-[0.35em] text-slate-500 dark:border-white/10 dark:text-smoke">
         <p>CLUB RAVEN · 3246 J St, Sacramento, CA 95816</p>
         <p class="mt-2">Crafted cocktails. Velvet nights. Black wings.</p>
+        <div class="mt-4 flex justify-center gap-6">
+          <a class="hover:text-ember" href="https://www.facebook.com/groups/133136520426/" target="_blank" rel="noreferrer">Facebook</a>
+          <a class="hover:text-ember" href="https://www.instagram.com/club_raven/" target="_blank" rel="noreferrer">Instagram</a>
+          <a class="hover:text-ember" href="terms.html">Terms</a>
+          <a class="hover:text-ember" href="privacy.html">Privacy</a>
+        </div>
       </footer>
+    </div>
+
+    <div
+      id="cookie-banner"
+      class="fixed bottom-6 left-1/2 z-50 hidden w-[min(92vw,720px)] -translate-x-1/2 rounded-3xl border border-slate-200 bg-white p-6 shadow-soft dark:border-white/10 dark:bg-night/90"
+    >
+      <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+        <div>
+          <p class="text-xs uppercase tracking-[0.3em] text-ember">Cookie Notice</p>
+          <p class="mt-2 text-sm text-slate-600 dark:text-smoke">
+            We use cookies to improve your experience. Read our
+            <a class="underline hover:text-ember" href="privacy.html">privacy policy</a>.
+          </p>
+        </div>
+        <button
+          id="cookie-accept"
+          class="rounded-full bg-ember px-5 py-2 text-xs uppercase tracking-[0.35em] text-black"
+          type="button"
+        >
+          Accept
+        </button>
+      </div>
     </div>
 
     <script>
@@ -360,6 +454,38 @@
         target.classList.add("opacity-0", "translate-y-6", "transition", "duration-700");
         observer.observe(target);
       });
+
+      const body = document.body;
+      const toggleButton = document.getElementById("theme-toggle");
+      const storedTheme = localStorage.getItem("clubraven-theme");
+
+      if (storedTheme === "dark") {
+        body.classList.add("dark");
+        if (toggleButton) toggleButton.textContent = "Light Mode";
+      }
+
+      if (toggleButton) {
+        toggleButton.addEventListener("click", () => {
+          body.classList.toggle("dark");
+          const isDark = body.classList.contains("dark");
+          toggleButton.textContent = isDark ? "Light Mode" : "Dark Mode";
+          localStorage.setItem("clubraven-theme", isDark ? "dark" : "light");
+        });
+      }
+
+      const cookieBanner = document.getElementById("cookie-banner");
+      const cookieAccept = document.getElementById("cookie-accept");
+
+      if (cookieBanner && !localStorage.getItem("clubraven-cookie")) {
+        cookieBanner.classList.remove("hidden");
+      }
+
+      if (cookieAccept) {
+        cookieAccept.addEventListener("click", () => {
+          localStorage.setItem("clubraven-cookie", "accepted");
+          cookieBanner.classList.add("hidden");
+        });
+      }
     </script>
   </body>
 </html>
