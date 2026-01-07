@@ -21,8 +21,9 @@ const MIME_TYPES = {
 
 const server = http.createServer((req, res) => {
   const requestPath = decodeURIComponent(req.url.split("?")[0]);
-  const safePath = path.normalize(requestPath).replace(/^\.\.(\/|\\)/, "");
-  const filePath = path.join(ROOT_DIR, safePath === "/" ? "index.html" : safePath);
+  const normalizedPath = path.normalize(requestPath).replace(/^(\.\.[\/\\])+/, "");
+  const relativePath = normalizedPath.replace(/^\/+/, "");
+  const filePath = path.join(ROOT_DIR, relativePath || "index.html");
 
   fs.readFile(filePath, (err, data) => {
     if (err) {
